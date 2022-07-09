@@ -5,22 +5,14 @@ paths:
 
 preprocessing:
   languages: ['fa']    # All languages in the dataset.
-
-  # Text (grapheme) and phoneme symbols, either provide a string or list of strings.
-  # Symbols in the dataset will be filtered according to these lists!
   text_symbols: ['ب','د','گ','غ','ح','ج','چ','ک','ق','ل','م','ن','پ','ر','ش','ذ','ص','ت','خ','ز','ع','ژ','ظ','ط','س','ث','ف','ا','و','ی','ه']
-
   phoneme_symbols: ['а','б','в','г','ғ','д','е','ё','ж','з','и','й','ӣ','қ','к','л','м','н','о','п','р','с','т','у','ӯ','ф','х','ҳ','ч','ҷ','ш','ъ','э','ю','я']
-
-  char_repeats: 3                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.
-                                 # Set to 1 for autoreg_transformer.
+  char_repeats: 3                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.                                # Set to 1 for autoreg_transformer.
   lowercase: false                # Whether to lowercase the grapheme input.
   n_val: 5000                    # Default number of validation data points if no explicit validation data is provided.
 
-
 model:
-  type: 'transformer'            # Whether to use a forward transformer or autoregressive transformer model.
-                                 # Choices: ['transformer', 'autoreg_transformer']
+  type: 'transformer'            # Whether to use a forward transformer or autoregressive transformer model.     # Choices: ['transformer', 'autoreg_transformer']
   d_model: 512
   d_fft: 1024
   layers: 6
@@ -28,8 +20,6 @@ model:
   heads: 4
 
 training:
-  # Hyperparams for learning rate and scheduler.
-  # The scheduler is reducing the lr on plateau of phoneme error rate (tested every n_generate_steps).
   learning_rate: 0.0001              # Learning rate of Adam.
   warmup_steps: 50                   # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
