@@ -16,14 +16,14 @@ model:
   dropout: 0.1
   heads: 4
 training:
-  learning_rate: 0.001              # Learning rate of Adam.
+  learning_rate: 0.01              # Learning rate of Adam.
   warmup_steps: 100                   # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 15     # Number of text generations with no improvement to tolerate.
   #100 
   #
-  batch_size: 64                     # Training batch size.
-  batch_size_val: 64                 # Validation batch size.
+  batch_size: 32                     # Training batch size.
+  batch_size_val: 32                 # Validation batch size.
   epochs: 50                        # Number of epochs to train.
   generate_steps: 100                # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                                     # error rates are calculated for the scheduler.
   validate_steps: 100                # Interval of training steps to validate the model                                     # (for the autoregressive model this is teacher-forced).
