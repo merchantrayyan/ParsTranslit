@@ -22,8 +22,8 @@ training:
   scheduler_plateau_patience: 15     # Number of text generations with no improvement to tolerate.
   #100 
   #
-  batch_size: 64                     # Training batch size.
-  batch_size_val: 64                 # Validation batch size.
+  batch_size: 128                     # Training batch size.
+  batch_size_val: 128                 # Validation batch size.
   epochs: 400                        # Number of epochs to train.
   generate_steps: 400                # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                                     # error rates are calculated for the scheduler.
   validate_steps: 400                # Interval of training steps to validate the model                                     # (for the autoregressive model this is teacher-forced).
