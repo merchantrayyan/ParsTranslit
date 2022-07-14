@@ -17,14 +17,14 @@ model:
   heads: 4
 training:
   learning_rate: 0.0001              # Learning rate of Adam.
-  warmup_steps: 50                   # Linear increase of the lr from zero to the given lr within the given number of steps.
+  warmup_steps: 100                   # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 1     # Number of text generations with no improvement to tolerate.
-  batch_size: 64                     # Training batch size.
-  batch_size_val: 64                 # Validation batch size.
-  epochs: 150                        # Number of epochs to train.
-  generate_steps: 250                 # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                                     # error rates are calculated for the scheduler.
-  validate_steps: 250                 # Interval of training steps to validate the model                                     # (for the autoregressive model this is teacher-forced).
-  checkpoint_steps: 2500              #    Interval of training steps to save the model.
+  batch_size: 32                     # Training batch size.
+  batch_size_val: 32                 # Validation batch size.
+  epochs: 200                        # Number of epochs to train.
+  generate_steps: 500                 # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                                     # error rates are calculated for the scheduler.
+  validate_steps: 500                 # Interval of training steps to validate the model                                     # (for the autoregressive model this is teacher-forced).
+  checkpoint_steps: 5000              #    Interval of training steps to save the model.
   n_generate_samples: 10             # Number of result samples to show on tensorboard.
   store_phoneme_dict_in_model: true  # Whether to store the raw phoneme dict in the model.                                  # It will be loaded by the phonemizer object.
