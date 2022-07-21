@@ -6,7 +6,7 @@ preprocessing:
   languages: ['fa']    # All languages in the dataset.
   # Text (grapheme) and phoneme symbols, either provide a string or list of strings.
   # Symbols in the dataset will be filtered according to these lists!
-  ض
+ 
   text_symbols: ['ض','آ','ب','د','گ','غ','ح','ج','چ','ک','ق','ل','م','ن','پ','ر','ش','ذ','ص','ت','خ','ز','ع','ژ','ظ','ط','س','ث','ف','ا','و','ی','ه']
   phoneme_symbols: ['а','б','в','г','ғ','д','е','ё','ж','з','и','й','ӣ','қ','к','л','м','н','о','п','р','с','т','у','ӯ','ф','х','ҳ','ч','ҷ','ш','ъ','э','ю','я']
   char_repeats: 3                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.                         # Set to 1 for autoreg_transformer.
@@ -22,16 +22,16 @@ model:
   heads: 4
 
 training:
-  learning_rate: 0.0001              # Learning rate of Adam.
-  warmup_steps: 50                   # Linear increase of the lr from zero to the given lr within the given number of steps.
+  learning_rate: 0.0002              # Learning rate of Adam.
+  warmup_steps: 100                   # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 15     # Number of text generations with no improvement to tolerate.
   batch_size: 4                     # Training batch size.
   batch_size_val: 4                 # Validation batch size.
-  epochs:   60                      # Number of epochs to train.
-  generate_steps: 200                # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                         # error rates are calculated for the scheduler.
-  validate_steps: 200                # Interval of training steps to validate the model                     # (for the autoregressive model this is teacher-forced).
-  checkpoint_steps: 200             #    Interval of training steps to save the model.
+  epochs: 50                      # Number of epochs to train.
+  generate_steps: 500                # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word                         # error rates are calculated for the scheduler.
+  validate_steps: 500                # Interval of training steps to validate the model                     # (for the autoregressive model this is teacher-forced).
+  checkpoint_steps: 5000             #    Interval of training steps to save the model.
   n_generate_samples: 10             # Number of result samples to show on tensorboard.
   store_phoneme_dict_in_model: true  # Whether to store the raw phoneme dict in the model.
                                      # It will be loaded by the phonemizer object.
