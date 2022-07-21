@@ -16,7 +16,7 @@ model:
   dropout: 0.1
   heads: 4
 training:
-  learning_rate: 0.0002              # Learning rate of Adam.
+  learning_rate: 0.0004              # Learning rate of Adam.
   warmup_steps: 100                   # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 1     # Number of text generations with no improvement to tolerate.
