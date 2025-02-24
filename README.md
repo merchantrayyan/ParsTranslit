@@ -2,6 +2,7 @@
 
 This repository contains code for the ParsTranslit project as well as up-to-date versions of ParsText, the novel corpus we created.
 
+# Transliteration Model
 
 # ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration
 This repository contains the corpus for the paper entitled ["ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration"](https://doi.org/10.31234/osf.io/xdf2w). 
@@ -32,6 +33,10 @@ This dataset is available in JSON, CSV and TXT format. In addition to these, we 
 │   ├── minimath.py               # Dependency for GaChalign                
 ├── LICENSE
 └── README.md
+```
+# Cite Us!
+If you use or reference ParsTranslit, please cite:
+```
 ```
 
 If you use or reference ParsText, please cite our paper:
