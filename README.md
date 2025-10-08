@@ -4,8 +4,8 @@ This repository will contain the code, data, and models for the ParsTranslit pro
 
 # Bi-directional Tajik-Farsi Transliteration Model
 
-# ParsText (filtered)
-Included within the released data will be a filtered version of the corpus for the paper entitled ["ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration"](https://doi.org/10.31234/osf.io/xdf2w). 
+# ParsText v2 (no overlaps)
+Included within the released data will be a curated/trimmed version of the ParsText corpus for the paper entitled ["ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration"](https://doi.org/10.31234/osf.io/xdf2w). 
 
 This filtered version only includes the manually-collected blog posts, and does not include the previously-included BBC articles, as it was discovered that [another dataset](https://github.com/stibiumghost/tajik-to-persian-transliteration) contained a more complete set of articles with which ours overlap.
 
