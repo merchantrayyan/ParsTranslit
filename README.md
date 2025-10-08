@@ -1,3 +1,3 @@
 # ParsTranslit
 
-This repository contains the code, data, and models for the ParsTranslit project.
+This repository is meant to contain the code, data, and models for the ParsTranslit project, to be released upon publication.
