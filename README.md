@@ -1,6 +1,7 @@
 # ParsTranslit
 
 This repository will contain the code, data, and models for the ParsTranslit project upon publication.
+
 Our preprint ["ParsTranslit: Truly Versatile Tajik-Farsi Transliteration"](https://arxiv.org/abs/2510.07520) describes our training process and results, with our evaluation demonstrating our model's superior performance compared to all other available models.
 
 # Bi-directional Tajik-Farsi Transliteration Model
