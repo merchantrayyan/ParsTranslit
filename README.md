@@ -29,16 +29,21 @@ If you use or reference ParsTranslit, please cite our preprint:
 If you use or reference ParsText, please cite our paper:
 
 ```
-@InProceedings{MerchantTang_CAWL_Accepted_2024,
-author = {Rayyan Merchant and Kevin Tang},
-title = {{P}ars{T}ext: A Digraphic Corpus for {T}ajik-{F}arsi Transliteration},
-booktitle = {{Proceedings of the Second Workshop on Computation and Written Language (CAWL 2024)}},
-year = {2024},
-editor = {Gorman, Kyle and Prud’hommeaux, Emily and Sproat, Richard and Roark, Brian},
-note = {accepted (Preprint: \url{https://doi.org/10.31234/osf.io/xdf2w}},
-publisher = {Association for Computational Linguistics},
-month = {05},
-pubstate = {forthcoming},
-address = {Torino, Italia},
+@inproceedings{merchant-tang-2024-parstext,
+    title = "{P}ars{T}ext: A Digraphic Corpus for {T}ajik-{F}arsi Transliteration",
+    author = "Merchant, Rayyan  and
+      Tang, Kevin",
+    editor = "Gorman, Kyle  and
+      Prud'hommeaux, Emily  and
+      Roark, Brian  and
+      Sproat, Richard",
+    booktitle = "Proceedings of the Second Workshop on Computation and Written Language (CAWL) @ LREC-COLING 2024",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.cawl-1.1/",
+    pages = "1--7",
+    abstract = "Despite speaking dialects of the same language, Persian speakers from Tajikistan cannot read Persian texts from Iran and Afghanistan. This is due to the fact that Tajik Persian is written in the Tajik-Cyrillic script, while Iranian and Afghan Persian are written in the Perso-Arabic script. As the formal registers of these dialects all maintain high levels of mutual intelligibility with each other, machine transliteration has been proposed as a more practical and appropriate solution than machine translation. Unfortunately, Persian texts written in both scripts are much more common in print in Tajikistan than online. This paper introduces a novel corpus meant to remedy that gap: ParsText. ParsText contains 2,813 Persian sentences written in both Tajik-Cyrillic and Perso-Arabic manually collected from blog pages and news articles online. This paper presents the need for such a corpus, previous and related work, data collection and alignment procedures, corpus statistics, and discusses directions for future work."
 }
 ```
