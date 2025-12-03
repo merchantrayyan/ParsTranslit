@@ -1,6 +1,7 @@
 # ParsTranslit
 
 This repository will contain the code, data, and models for the ParsTranslit project upon publication.
+Our preprint ["ParsTranslit: Truly Versatile Tajik-Farsi Transliteration"](https://arxiv.org/abs/2510.07520) describes our training process and results, with our evaluation demonstrating our model's superior performance compared to all other available models.
 
 # Bi-directional Tajik-Farsi Transliteration Model
 
@@ -11,8 +12,17 @@ This filtered version only includes the manually-collected blog posts, and does 
 
 
 # Cite Us!
-If you use or reference ParsTranslit, please cite:
+If you use or reference ParsTranslit, please cite our preprint:
 ```
+@misc{merchant2025parstranslittrulyversatiletajikfarsi,
+      title={ParsTranslit: Truly Versatile Tajik-Farsi Transliteration}, 
+      author={Rayyan Merchant and Kevin Tang},
+      year={2025},
+      eprint={2510.07520},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.07520}, 
+}
 ```
 
 If you use or reference ParsText, please cite our paper:
