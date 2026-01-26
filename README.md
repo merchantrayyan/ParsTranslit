@@ -7,9 +7,11 @@ Our preprint ["ParsTranslit: Truly Versatile Tajik-Farsi Transliteration"](https
 # Bi-directional Tajik-Farsi Transliteration Model
 
 # ParsText v2 (no overlaps)
-Included within the released data will be a curated/trimmed version of the ParsText corpus for the paper entitled ["ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration"](https://doi.org/10.31234/osf.io/xdf2w). 
+Included within the released data will be an updated version of the ParsText corpus for the paper entitled ["ParsText: A Digraphic Corpus for Tajik-Farsi Transliteration"](https://doi.org/10.31234/osf.io/xdf2w). 
 
-This filtered version only includes the manually-collected blog posts, and does not include the previously-included BBC articles, as it was discovered that [another dataset](https://github.com/stibiumghost/tajik-to-persian-transliteration) contained a more complete set of articles with which ours overlap.
+This filtered version does not include the previously-included BBC articles, as it was discovered that [another dataset](https://github.com/stibiumghost/tajik-to-persian-transliteration) contained a more complete set of articles with which ours overlap. Their paper describing their model and dataset is [here](https://elar.urfu.ru/handle/10995/140361) (in Russian). 
+
+However, we also include two new datasets, most notably the first Tajik-Farsi named entity dataset drawn from the ParaNames Wikipedia corpus and an aligned version of the Masnavi.
 
 
 # Cite Us!
